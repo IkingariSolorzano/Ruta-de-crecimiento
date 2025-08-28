@@ -1,5 +1,8 @@
 # Ruta de crecimiento
 
+<!-- //Abstract -->
+Este proyecto tiene como objetivo aprender los principios SOLID
+
 ## Principios SOLID
 
 ### 1. Principio de responsabilidad única (SRP)
