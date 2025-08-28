@@ -16,6 +16,9 @@ func NewProductosEnMemoriaRepository() *ProductosEnMemoriaRepository {
 }
 
 func (r *ProductosEnMemoriaRepository) Guardar(p *domain.Producto) error {
+	if _, ok := r.productos[p.ID]; ok {
+		return errors.New("producto ya existe")
+	}
 	r.productos[p.ID] = p
 	return nil
 }
